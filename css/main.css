@@ -475,10 +475,12 @@ input.placeholder-text, textarea.placeholder-text  {
 
 
 /*This is the big version tablet styling*/
-@media only screen and (min-width: 769px) and (max-width: 860px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {    
+
     #mobile-bike {
         display: block;
     }
+
     img#title-image {
         display: none;
     }
@@ -503,7 +505,7 @@ input.placeholder-text, textarea.placeholder-text  {
 }
 /*Thid is tablet styling*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
-    
+
     body{
         background-repeat: no-repeat;
         width: 100%;
@@ -605,9 +607,6 @@ input.placeholder-text, textarea.placeholder-text  {
          iframe{
         width: 90%;
         margin-top: 0;
-   
-       
-
 
        } 
 
@@ -635,6 +634,15 @@ input.placeholder-text, textarea.placeholder-text  {
 
 
        } 
+
+    #iframe-holder {
+        width: 100%;
+        margin-top: 0;
+        height: auto;
+        left: 10px;
+        margin-bottom: 0;
+        
+        }
 
      #container-txt{
         width: 90%;
