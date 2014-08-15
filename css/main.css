@@ -1,0 +1,891 @@
+r/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    height: 100%;
+    width: 100%;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+header {
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+
+#logo{
+    background-color: white;
+    float :left;
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 200px;
+    padding: 0 5px;
+}
+
+#logo img {
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
+    
+    }
+
+#menu{
+    height: 35px;
+    background-color: white ;
+    margin-top: 15px;
+    float:  right;
+    -webkit-box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.2);
+    line-height: 35px;
+
+    }
+
+div.nav{
+    float: left;
+    width: auto;
+    height: 15px;
+    font-size: 12px;
+    padding: 0px 10px; 
+    position: relative;
+}
+
+div.nav:after{
+    content: "|";
+    font-weight: bold;
+    position: absolute;
+    right: -2px;
+}
+div.nav:last-child:after{
+    content: "";
+}
+div.navd{
+    width : 10px;
+    height: 15px; 
+    float: left;
+    padding: 0px 10px;
+
+    }
+
+body{
+    background-image: url(../img/george_throttle_website.jpg);
+    -webkit-background-size: cover;
+    background-position: center center;
+    color: #4c2d1b;
+    background-repeat: no-repeat;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    height: 100%;
+    width: 100%;
+ 
+    }
+
+div.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    
+    }
+
+#container-img{
+    background: url(../img/transparent-white.png) 0 0 repeat;
+    width: 46%;
+    float: left;
+    -webkit-box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.2);
+    margin-left: 25px;
+    padding: 5px 0 5px 5px;
+   
+    }
+
+#container-img div {
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+    
+    }    
+
+#container-img div img {
+    width: 100%;
+    
+    }
+
+#container-txt{
+    width: 44%;
+    -webkit-box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.2);
+    margin-right: 20px;
+    margin-top: 150px;
+    float: right;
+    padding: 0px 10px 10px 10px ;
+    background-color: white;
+    position: relative;
+
+    }
+
+#site-title, 
+#mobile-bike {
+    position: absolute;
+    width: 100%;   
+    top: -130px;
+    left: -7px;
+    width: 103%;
+}
+
+#mobile-bike {
+    display: none;
+}
+
+img#title-image {
+	max-width: 100%;
+}
+
+img#bike {
+    position: absolute;
+    top: 100px;
+    width: 13%;
+    -ms-transform: rotate(24deg); /* IE 9 */
+    -webkit-transform: rotate(24deg); /* Chrome, Safari, Opera */
+    transform: rotate(24deg);
+    z-index: 2;
+    -webkit-animation: bikeAnimation 2.5s forwards;  
+    animation: bikeAnimation 2.5s forwards;
+}
+
+@-webkit-keyframes bikeAnimation {
+    0% { left: 0; }
+    100% { left: 62%; -webkit-transform: rotate(-1deg);}
+}
+
+/* Standard syntax */
+@keyframes bikeAnimation {
+    from { }
+    to { }
+}    
+
+
+
+#container-txt img{
+    margin-top: 24px;
+    
+    }
+
+p{
+    font-size: 12px;
+    color: #4c2d1b;
+    
+    }
+
+#fbbox { 
+    width: 25px;
+    height: 30px;
+    float: left;
+    
+    }
+
+#fbbox img{
+    position: relative;
+    bottom: 25px;    
+    
+    }
+
+
+#twbox{
+    width: 25px;
+    height: 30px;
+    float: left;
+    margin-left: 20px;
+
+    }
+
+#twbox img{
+    position: relative;
+    bottom: 25px;
+    
+    }
+
+.marginset{
+    margin-left: 5px;
+    
+    }
+
+    #iframe-holder {
+        position: relative;
+        width: 46%;
+        height: 335px;
+        margin-bottom: 30px;
+        padding-top: 85px;
+        left: 25px;
+
+    }
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: #4c2d1b;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: #4c2d1b;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #4c2d1b;
+    }
+
+    a:active {
+        text-decoration: none;
+        color: #4c2d1b;
+    }
+
+    /*Contact.html styling*/
+
+
+#contact-form h1 {
+    font-size:25px;
+
+}
+ 
+#contact-form h2 {
+    margin-bottom:15px;
+    font-style:italic;
+    font-weight:normal;
+}
+ 
+#contact-form input, 
+#contact-form textarea, 
+#contact-form label {
+    font-size:15px;
+    margin-bottom:2px;
+}
+ 
+#contact-form input,  
+#contact-form textarea {
+    border: 2px solid #4c2d1b;
+    margin-bottom:20px;
+    padding:4px ;
+    width: 96%;
+    margin-left: 2%;
+}
+ 
+#contact-form input:focus, 
+#contact-form select:focus, 
+#contact-form textarea:focus {
+    border: 2px solid #4c2d1b;
+    background-color: ;
+}
+ 
+
+ 
+#contact-form label {
+    display:block;
+}
+ 
+#contact-form .required {
+    font-weight:bold;
+    color:#F00;    
+}
+ 
+#contact-form #submit-button {
+    width: 100px;
+    background-color:#333;
+    color:#FFF;
+    border:none;
+    display:block;
+    float:right;
+    margin-bottom:0px;
+    margin-right:6px;
+    background-color:#8FB5C1;
+    -moz-border-radius:8px;
+}
+ 
+#contact-form #submit-button:hover {
+    background-color: #A6CFDD;
+}
+ 
+#contact-form #submit-button:active {
+    position:relative;
+    top:1px;
+}
+ 
+#contact-form #loading {
+    width:32px;
+    height:32px;
+    background-image:url(../img/loading.gif);
+    display:block;
+    position:absolute;
+    right:130px;
+    bottom:16px;
+    display:none;
+}
+ 
+#errors {
+    font-size: 16px;
+    border:solid 1px #E58E8E;
+    padding:10px;
+    margin:25px 0px;
+    display:block;
+    width:96%;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#FFE6E6 url(../img/cancel_48.png) no-repeat 405px center;
+    display:none;
+    margin-left: 2%;
+}
+ 
+#errors li {
+    padding:2px;
+    list-style:none;    
+}
+ 
+#errors li:before {
+    content: ' - ';    
+}
+ 
+#errors #info {
+    font-weight:bold;
+}
+ 
+#errors #info:before {
+    content: '';    
+}
+ 
+#success {
+    font-size: 16px;
+    border:solid 1px #83D186;
+    padding:25px 10px;
+    margin:25px 0px;
+    display:block;
+    width:96%;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#D3EDD3 url(../img/accepted_48.png) no-repeat 405px center;
+    font-weight:bold;
+    display:none;
+    margin-left: 2%;
+}
+ 
+#errors.visible, #success.visible {
+    display:block;    
+}
+ 
+#req-field-desc {
+    font-style:italic;
+}
+ 
+input:required, textarea:required {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+ 
+/* Normalize placeholder styles */
+ 
+/* chrome, safari */
+::-webkit-input-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+ 
+/* mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+ 
+/* ie (faux placeholder) */
+input.placeholder-text, textarea.placeholder-text  { 
+    color:#CCC;
+    font-style:italic;
+}
+
+
+@media only screen and ( min-width: 135em ) {
+    body #container-txt p { font-size: 1.6em !important; } 
+
+    div.wrapper { width: 100%; max-width: 100%; }
+
+
+}
+
+
+/*This is the big version tablet styling*/
+@media only screen and (min-width: 769px) and (max-width: 860px) {
+    #mobile-bike {
+        display: block;
+    }
+    img#title-image {
+        display: none;
+    }
+
+    img#bike {
+        display: none;
+    }
+    #logo {
+        width: 160px;
+    }
+    div.nav{
+        font-size: 10px;
+        font-weight: bold;
+        padding: 0 5px;
+    }
+
+    .navd{
+        width: 100%;
+        float: inherit;
+    }
+
+}
+/*Thid is tablet styling*/
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    
+    body{
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+
+    img#title-image {
+        display: none;
+    }
+
+    img#bike {
+        display: none;
+    }
+
+    #mobile-bike {
+        display: block;
+    }
+
+     #container-txt{
+        width: 90%;
+        margin: 3% ;
+        padding: 0 2% 2% 2% ;
+        margin-top: 20%;
+        position: relative;
+        margin-right: 5%;
+    
+        }
+
+     #container-txt img.bike{
+        left: 0;
+        max-width: 100%;
+    
+        }
+
+     #container-img{
+        width: 94%;
+        margin:3%;
+    
+        }
+
+
+     #menu{
+        height: auto;
+        width: 33%;   
+        margin: 0;
+        top: 50px;
+        position: absolute; 
+        right: 3%; 
+        z-index: 2;
+        display: none;
+        }
+    
+     div.nav{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+        height: auto;
+        
+        }
+    div.nav:after{
+        display: none;
+        
+        }
+
+     div.menubutton{
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        margin: 5px 3% 5px 0px;
+        float: right;
+        background: white;
+        border: 1px solid;
+        right: 0;
+         border-radius: 3px 3px;
+        -webkit-border-radius:3px 3px;
+
+        
+        }
+
+     .menubutton span{
+        width: 26px;
+        height: 4px;
+        background-color: #4c2d1b;
+        display: block;
+        margin: 5px auto;
+        position: relative;
+        top: 2px;
+        
+        }
+
+      
+
+     .menubutton .span-one{
+        margin-top: 8px;
+        
+        }
+
+         iframe{
+        width: 90%;
+        margin-top: 0;
+   
+       
+
+
+       } 
+
+
+}
+/* This is the mobile styling */
+@media only screen and (max-width: 480px) {
+
+    #mobile-bike {
+        display: block;
+    }
+
+    img#title-image {
+        display: none;
+    }
+
+    img#bike {
+        display: none;
+    }
+     
+       iframe{
+        width: 94%;
+        margin-top: 0;
+        left: 10px;
+
+
+       } 
+
+     #container-txt{
+        width: 90%;
+        margin: 3% ;
+        padding: 0 2% 2% 2% ;
+        margin-top: 20%;
+        margin-right: 5%;
+    
+        }
+
+        #fbbox{
+            position: relative;
+            top: 10px;
+        }
+
+        #twbox{
+            position: relative;
+            top: 10px;
+        }
+
+     #container-txt img{
+        left: 0;
+        margin-top: 19%;
+        }
+
+        
+
+     #container-img{
+        width: 94%;
+        margin:3%;
+
+        }
+
+     #logo{
+
+        position: center center;
+        margin-left: 20%;   
+
+        }
+
+     #menu{
+ 
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: none;
+        position: relative;
+        top: 10px;
+
+        }
+
+     div.nav{
+        width: 100%;
+        padding: 0;
+        text-align: center;     
+        margin: 0;
+        height: auto;
+       
+        }
+    
+     div.navd{
+        display: none;
+
+        }
+
+        div.menubutton{
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        margin: 11px 3% 5px 0px;
+        float: right;
+        background: white;
+        border: 1px solid;
+        right: 0;
+        border-radius: 3px 3px;
+        -webkit-border-radius:3px 3px;
+        margin-right: 3px;
+        
+        }
+
+     .menubutton span{
+        width: 26px;
+        height: 4px;
+        background-color: #4c2d1b;
+        display: block;
+        margin: 5px auto;
+        position: relative;
+        top: 2px;
+
+
+        }
+
+     .menubutton .span-one{
+        margin-top: 8px;
+        
+        }
+
+     img.bike{
+        position: absolute;
+        top: -125px;
+        
+        }
+
+    #contact-form{
+        width: 90%;
+        position: relative;
+        margin-top: 10%;
+        left: 5%;
+        }
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
